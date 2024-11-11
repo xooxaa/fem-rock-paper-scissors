@@ -95,3 +95,8 @@
   height: 100px;
   margin: 5px;
 }
+
+.icon-highlight {
+  outline: 2px solid gold;
+  outline-offset: 2px;
+}

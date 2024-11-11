@@ -72,6 +72,7 @@
         [src]="getImageSrc(playerChoice)"
         [alt]="playerChoice"
         class="result-icon"
+        [class.icon-highlight]="result === 'You win!' && playerChoice"
       />
       }
     </div>
@@ -88,6 +89,7 @@
         [src]="getImageSrc(computerChoice)"
         [alt]="computerChoice"
         class="result-icon"
+        [class.icon-highlight]="result === 'You loose!' && playerChoice"
       />
       }
     </div>
