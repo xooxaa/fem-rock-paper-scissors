@@ -57,7 +57,7 @@ export class AppComponent {
       case 'lizard':
         return 'icon-lizard.svg';
       case 'spock':
-        return '/icon-spock.svg';
+        return 'icon-spock.svg';
       default:
         return '';
     }
