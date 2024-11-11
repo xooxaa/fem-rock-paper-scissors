@@ -48,6 +48,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Deploy to GitHub Pages
+Run `ng deploy --base-href=https://xooxaa.github.io/fem-rock-paper-scissors/` to deploy this project to GitHub pages. Adjust the base href according to your GitHub username.
+
 ## Running Unit Tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
