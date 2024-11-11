@@ -83,6 +83,32 @@
   transition: transform 0.2s;
 }
 
+.icon-border-rock {
+  border-color: #e03794;
+}
+.icon-border-paper {
+  border-color: #4e6bf5;
+}
+.icon-border-scissors {
+  border-color: #e9db1b;
+}
+.icon-border-lizard {
+  border-color: #8955e5;
+}
+.icon-border-spock {
+  border-color: #47b9d1;
+}
+
+.icon-border-win {
+  border-color: #53d147;
+}
+.icon-border-loose {
+  border-color: #d14747;
+}
+.icon-border-draw {
+  border-color: #8d8d8d;
+}
+
 .icon:hover {
   transform: scale(1.1);
 }
@@ -92,9 +118,4 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-}
-
-.icon-highlight {
-  outline: 2px solid gold;
-  outline-offset: 2px;
 }
