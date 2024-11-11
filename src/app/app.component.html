@@ -30,36 +30,31 @@
 
   @if (isChoosing) {
   <div class="choices">
-    <img
-      src="icon-rock.svg"
-      alt="Rock"
-      (click)="play('rock')"
-      class="choice-icon"
-    />
+    <img src="icon-rock.svg" alt="Rock" (click)="play('rock')" class="icon" />
     <img
       src="icon-paper.svg"
       alt="Paper"
       (click)="play('paper')"
-      class="choice-icon"
+      class="icon"
     />
     <img
       src="icon-scissors.svg"
       alt="Scissors"
       (click)="play('scissors')"
-      class="choice-icon"
+      class="icon"
     />
     @if(getGameMode() === "RPSLS") {
     <img
       src="icon-lizard.svg"
       alt="Lizard"
       (click)="play('lizard')"
-      class="choice-icon"
+      class="icon"
     />
     <img
       src="icon-spock.svg"
       alt="Spock"
       (click)="play('spock')"
-      class="choice-icon"
+      class="icon"
     />
     }
   </div>
@@ -71,7 +66,7 @@
       <img
         [src]="getImageSrc(playerChoice)"
         [alt]="playerChoice"
-        class="result-icon"
+        class="icon"
         [class.icon-highlight]="result === 'You win!' && playerChoice"
       />
       }
@@ -88,7 +83,7 @@
       <img
         [src]="getImageSrc(computerChoice)"
         [alt]="computerChoice"
-        class="result-icon"
+        class="icon"
         [class.icon-highlight]="result === 'You loose!' && playerChoice"
       />
       }
