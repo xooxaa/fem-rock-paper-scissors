@@ -45,4 +45,21 @@ export class AppComponent {
   getScore() {
     return this.gameService.getScore();
   }
+
+  getImageSrc(choice: string): string {
+    switch (choice) {
+      case 'rock':
+        return 'icon-rock.svg';
+      case 'paper':
+        return 'icon-paper.svg';
+      case 'scissors':
+        return 'icon-scissors.svg';
+      case 'lizard':
+        return 'icon-lizard.svg';
+      case 'spock':
+        return '/icon-spock.svg';
+      default:
+        return '';
+    }
+  }
 }

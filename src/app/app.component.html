@@ -2,7 +2,7 @@
 <div class="game-container">
   <div class="mode-and-score">
     <div
-      class="game-mode text-left text-large"
+      class="game-mode text-right"
       (click)="!isChoosing || setGameMode('RPS')"
       [class.game-mode-active]="getGameMode() === 'RPS'"
     >
@@ -19,7 +19,7 @@
     </div>
 
     <div
-      class="game-mode text-right"
+      class="game-mode text-left"
       (click)="!isChoosing || setGameMode('RPSLS')"
       [class.game-mode-active]="getGameMode() === 'RPSLS'"
     >
@@ -33,18 +33,59 @@
 
   @if (isChoosing) {
   <div class="choices">
-    <button (click)="play('rock')">Rock</button>
-    <button (click)="play('paper')">Paper</button>
-    <button (click)="play('scissors')">Scissors</button>
+    <img
+      src="icon-rock.svg"
+      alt="Rock"
+      (click)="play('rock')"
+      class="choice-icon"
+    />
+    <img
+      src="icon-paper.svg"
+      alt="Paper"
+      (click)="play('paper')"
+      class="choice-icon"
+    />
+    <img
+      src="icon-scissors.svg"
+      alt="Scissors"
+      (click)="play('scissors')"
+      class="choice-icon"
+    />
     @if(getGameMode() === "RPSLS") {
-    <button (click)="play('lizard')">Lizard</button>
-    <button (click)="play('spock')">Spock</button>
+    <img
+      src="icon-lizard.svg"
+      alt="Lizard"
+      (click)="play('lizard')"
+      class="choice-icon"
+    />
+    <img
+      src="icon-spock.svg"
+      alt="Spock"
+      (click)="play('spock')"
+      class="choice-icon"
+    />
     }
   </div>
   } @else {
   <div class="result">
-    <p>Your choice: {{ playerChoice }}</p>
-    <p>Computer's choice: {{ computerChoice }}</p>
+    <p>Your choice:</p>
+    @if(playerChoice) {
+    <img
+      [src]="getImageSrc(playerChoice)"
+      [alt]="playerChoice"
+      class="result-icon"
+    />
+    }
+
+    <p>Computer's choice:</p>
+    @if(computerChoice) {
+    <img
+      [src]="getImageSrc(computerChoice)"
+      [alt]="computerChoice"
+      class="result-icon"
+    />
+    }
+
     <p>Result: {{ result }}</p>
   </div>
 

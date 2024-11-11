@@ -7,10 +7,12 @@
 }
 
 .mode-and-score {
+  margin-bottom: 5rem;
+
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   padding: 1rem 2rem;
   border: 1px solid #dedede;
@@ -32,13 +34,11 @@
 
 .text-left {
   text-align: left;
+  font-size: 1.4rem;
 }
 .text-right {
   text-align: right;
-}
-
-.text-large {
-  font-size: 1.666rem;
+  font-size: 2.4rem;
 }
 
 .choices button {
@@ -51,15 +51,39 @@
 
 .score {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #3c4262;
   background-color: #f9f9f9;
 
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   border-radius: 7px;
 }
 
 .score p:last-of-type {
-  font-size: 3rem;
+  line-height: 1;
+  font-size: 4rem;
   font-weight: 600;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.choice-icon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.choice-icon:hover {
+  transform: scale(1.1);
+}
+
+.result-icon {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
 }

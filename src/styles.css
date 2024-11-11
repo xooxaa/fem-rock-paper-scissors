@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Kanit";
-  src: url("../public/Kanit-Regular.ttf");
+  font-family: "BarlowCondensed";
+  src: url("../public/BarlowCondensed-SemiBold.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Kanit";
-  src: url("../public/Kanit-Bold.ttf");
+  font-family: "BarlowCondensed";
+  src: url("../public/BarlowCondensed-Bold.ttf");
   font-weight: 600;
   font-style: normal;
 }
@@ -75,7 +75,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  font-family: "Kanit", sans-serif;
+  font-family: "BarlowCondensed", sans-serif;
 }
 
 body::before {
